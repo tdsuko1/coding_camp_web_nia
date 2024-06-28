@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Tours Booking</title>
+    <link rel="stylesheet"href="style.css" type="text/css">
+</head>
+<body>
+   <header>
+        <h1 class="header-title">Time Tours</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="bookingform.html">Booking</a>
+            <a href="about.html">About Us</a>
+        </nav>
+   </header> 
+   <main class="formcontainer">
+        <h1 class="title">Tour Reservations Form</h1>
+        <img src="images/booking.png"alt="">
+        <div class="form">
+            <label>Tour Package</label>
+            <select name="package" id="package">
+                <option id="1" value="3500">Sakura Tours | $3500</option>
+                <option id="2" value="2500">Anime World Tours | $2500</option>
+                <option id="3" value="5500">Discover Japan | $5500</option>
+                <option id="4" value="7500">Japanese Ancestry Tours| $7500</option>
+                <option id="5" value="9500">Hidden Trails | $9500</option>
+            </select>
+            <script>
+                document.addEventListener("DOMContentLoaded", function(){
+                    selectOptionFromUrlParam()
+                })
+            </script>
+            <label>Full name</label>
+            <input type="text">
+            <label>Email</label>
+            <input type="email">
+            <label>Phone Number</label>
+            <input type="number">
+            <label>Pick a Date</label>
+            <input type="date">
+            <label>How Many Person?</label>
+            <input id ="num-of-people" type="number">
+            <h3>Total Payment :$ <span id="total"></span> </h3>
+            <button onclick="process()">Process Booking</button>
+        </div>
+   </main>
+   <footer>
+        <h4>Time Tours</h4>
+        <p>Copyright &copy 2024 designed by Timedoor Academy</p>
+   </footer>
+   <script src="script.js"></script>
+</body>
+</html>
