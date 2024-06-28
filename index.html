@@ -1,111 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css" type="text/css">
-    <title>TIME TOURS</title>
-</head>
-<body>
-    <header>
-        <h1 class="header-title">Time Tours</h1>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="bookingform.html">Booking</a>
-            <a href="about.html">About Us</a>
-        </nav>
-    </header>
-    <main>
-        <div class="jumbotron">
-            <div>
-                <h1>Time Tours</h1>
-                <h3>
-                    Traveling- it leaves you speechless, then turns you into a storyteller-ibn battuta
-                </h3>
-                <p>Website created by: Timedoor Academy</p>
-            </div>
-            <div>
-                <img src="images/travel-logo.png" alt="logo">
-            </div>
-        </div>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" type="text/css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Playwrite+NG+Modern:wght@100..400&family=Playwrite+US+Modern:wght@100..400&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
+			rel="stylesheet"
+		/>
+		<title>TIME TOURS</title>
+	</head>
+	<body>
+		<header>
+			<h1 class="header-title">Time Tours</h1>
+			<nav>
+				<a href="index.html">Home</a>
+				<a href="bookingform.html">Booking</a>
+				<a href="about.html">About Us</a>
+			</nav>
+		</header>
+		<main>
+			<div class="jumbotron">
+				<div>
+					<h1>Time Tours</h1>
+					<h3>Traveling- it leaves you speechless, then turns you into a storyteller-ibn battuta</h3>
+					<p>Website created by: Timedoor Academy</p>
+				</div>
+				<div>
+					<img src="images/travel-logo.png" alt="logo" />
+				</div>
+			</div>
 
-        <div class="main-container">
-            <div class="package-container">
-                <img src="images/sakura.jpeg" alt="Sakura">
-                <h3>Sakura Tours| 7 Days</h3>
-                <p>Travel Japan during sakura season</p>
-                <h4>USD 3,500 </h4>
-                <button class="left" onclick="goToBooking()">BOOK NOW</button>
-            </div>
-            <div class="package-container">
-                <img src="images/shibuya.jpg" alt="Shibuya">
-                <h3>Shibuya Tours| 7 Days</h3>
-                <p>Experience The city that never sleeps</p>
-                <h4>USD 3,500 </h4> 
-                <button class="left" onclick="goToBooking()">BOOK NOW</button>
-            </div>
-            <div class="package-container">
-                <img src="images/Kanazawa.jpg" alt="Kanazawa">
-                <h3>Kanazawa Tours| 7 Days</h3>
-                <p>Enjoy Relaxing Walk in the Calming City</p>
-                <h4>USD 3,500 </h4>
-                <button class="left" onclick="goToBooking()">BOOK NOW</button>
-            </div>
-        </div>
+			<div class="main-container">
+				<div class="package-container">
+					<img src="images/sakura.jpeg" alt="Sakura" />
+					<h3>Sakura Tours| 7 Days</h3>
+					<p>Travel Japan during sakura season</p>
+					<h4>USD 3,500</h4>
+					<button class="left" onclick="goToBooking()">BOOK NOW</button>
+				</div>
+				<div class="package-container">
+					<img src="images/shibuya.jpg" alt="Shibuya" />
+					<h3>Shibuya Tours| 7 Days</h3>
+					<p>Experience The city that never sleeps</p>
+					<h4>USD 3,500</h4>
+					<button class="left" onclick="goToBooking()">BOOK NOW</button>
+				</div>
+				<div class="package-container">
+					<img src="images/Kanazawa.jpg" alt="Kanazawa" />
+					<h3>Kanazawa Tours| 7 Days</h3>
+					<p>Enjoy Relaxing Walk in the Calming City</p>
+					<h4>USD 3,500</h4>
+					<button class="left" onclick="goToBooking()">BOOK NOW</button>
+				</div>
+			</div>
 
-        <h1 class="title">Tours Detail</h1>
-        <div class="table">
-           
-            <table>
-                <tr>
-                    <th>Package</th>
-                    <th>Description </th>
-                    <th>Places</th>
-                    <th>Price</th>  
-                    <th>Booking</th>
-                </tr>
-                <tr>
-                    <td><img src="images/sakura.jpeg" alt=""></td>
-                    <td>Sakura Tours | 10 Days</td>
-                    <td>Tokyo, Kyoto, Osaka</td>
-                    <td>USD 3,500</td>
-                    <td><button  onclick="goToBooking(1)">BOOK NOW</button></td>
-                </tr>
-                <tr>
-                    <td><img src="images/hiroshima.jpg" alt=""></td>
-                    <td>Anime world tours | 7 Days</td>
-                    <td>Tokyo, Disney, Osaka</td>
-                    <td>USD 2,500</td>
-                    <td><button onclick="goToBooking(2)">BOOK NOW</button></td>              
-                </tr>
-                <tr>
-                    <td><img src="images/Kanazawa.jpg" alt=""></td>
-                    <td>Discover Japan | 7 Days</td>
-                    <td>Hokkaido, Nagano, Kobe</td>
-                    <td>USD 5,500</td>
-                    <td><button  onclick="goToBooking(3)">BOOK NOW</button></td>               
-                </tr>
-                <tr>
-                    <td><img src="images//shibuya.jpg" alt=""></td>
-                    <td>Japanese Ancestry Tours | 7 Days</td>
-                    <td>Tokyo, Kyoto, Hakuba, Ise, Nara</td>
-                    <td>USD 7,500</td>
-                    <td><button onclick="goToBooking(4)">BOOK NOW</button></td>
-                </tr>
-                <tr>
-                    <td><img src="images//shibuya.jpg" alt=""></td>
-                    <td>Hidden Trails | 11 Days</td>
-                    <td>Tokyo, Kyoto, Hakuba, Ise, Nara</td>
-                    <td>USD 9,500</td>
-                    <td><button onclick="goToBooking(5)">BOOK NOW</button></td>
-                </tr>
-            </table>
-        </div>
-    </main>
-    <footer>
-        <h4>Time Tours</h4>
-        <p>Copyright &copy 2024 designed by Timedoor Academy</p>
-    </footer>
-    <script src="script.js"></script>
-</body>
+			<h1 class="title">Tours Detail</h1>
+			<div class="table">
+				<table>
+					<tr>
+						<th>Package</th>
+						<th>Description</th>
+						<th>Places</th>
+						<th>Price</th>
+						<th>Booking</th>
+					</tr>
+					<tr>
+						<td><img src="images/sakura.jpeg" alt="" /></td>
+						<td>Sakura Tours | 10 Days</td>
+						<td>Tokyo, Kyoto, Osaka</td>
+						<td>USD 3,500</td>
+						<td><button onclick="goToBooking(1)">BOOK NOW</button></td>
+					</tr>
+					<tr>
+						<td><img src="images/hiroshima.jpg" alt="" /></td>
+						<td>Anime world tours | 7 Days</td>
+						<td>Tokyo, Disney, Osaka</td>
+						<td>USD 2,500</td>
+						<td><button onclick="goToBooking(2)">BOOK NOW</button></td>
+					</tr>
+					<tr>
+						<td><img src="images/Kanazawa.jpg" alt="" /></td>
+						<td>Discover Japan | 7 Days</td>
+						<td>Hokkaido, Nagano, Kobe</td>
+						<td>USD 5,500</td>
+						<td><button onclick="goToBooking(3)">BOOK NOW</button></td>
+					</tr>
+					<tr>
+						<td><img src="images//shibuya.jpg" alt="" /></td>
+						<td>Japanese Ancestry Tours | 7 Days</td>
+						<td>Tokyo, Kyoto, Hakuba, Ise, Nara</td>
+						<td>USD 7,500</td>
+						<td><button onclick="goToBooking(4)">BOOK NOW</button></td>
+					</tr>
+					<tr>
+						<td><img src="images//shibuya.jpg" alt="" /></td>
+						<td>Hidden Trails | 11 Days</td>
+						<td>Tokyo, Kyoto, Hakuba, Ise, Nara</td>
+						<td>USD 9,500</td>
+						<td><button onclick="goToBooking(5)">BOOK NOW</button></td>
+					</tr>
+				</table>
+			</div>
+			<h1 class="title">Travel Guide Playlist</h1>
+			<div class="main-container">
+				<iframe
+					width="560"
+					height="315"
+					src="https://www.youtube.com/embed/CxuiFNYnEr4?si=ShLSzNOAAp2Qsl2u"
+					title="YouTube video player"
+					frameborder="0"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+					referrerpolicy="strict-origin-when-cross-origin"
+					allowfullscreen
+				></iframe>
+			</div>
+		</main>
+		<footer>
+			<h4>Time Tours</h4>
+			<p>Copyright &copy 2024 designed by Timedoor Academy</p>
+		</footer>
+		<script src="script.js"></script>
+	</body>
 </html>
